@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- tests，两个test节点将同时触发，classes，当某个classers下有多个class节点时，class将同时触发，但test按顺序执行-->
+<suite name="CMS后台" parallel="tests" thread-count="1">
+
+    <!--&lt;!&ndash;<根据情况，可以将不同case按suite或者class进行拆分。按suite拆分，此处的多线程并发实际不会生效>&ndash;&gt;-->
+    <!--<suite-files>-->
+    <!--<suite-file path="test1.xml"></suite-file>-->
+    <!--&lt;!&ndash;<suite-file path="test2"></suite-file>&ndash;&gt;-->
+    <!--</suite-files>-->
+    <test name="CMS后台-火狐浏览器" preserve-order="true">
+        <parameter name="BrowserName" value="Firefox"/>
+        <parameter name="url" value="http://cms.testenv.menghunli.com/login"/>
+        <classes>
+            <class name="com.menghunli.cms.testcase.TestCase">
+                <methods>
+                    <!--缘分页-->
+                    <include name="checkCmsLogin"/>
+                    <!--<include name="checkRzsqSearchCityPhone"/>-->
+                    <!--<include name="checkRzsqSearchSeller"/>-->
+
+
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.menghunli.cms.listener.ExtentTestNGITestListener"/>
+    </listeners>
+</suite>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CMS后台" duration-ms="32610" started-at="2019-04-23T11:48:29Z" finished-at="2019-04-23T11:49:01Z">
+    <groups>
+    </groups>
+    <test name="CMS后台-谷歌浏览器" duration-ms="32610" started-at="2019-04-23T11:48:29Z" finished-at="2019-04-23T11:49:01Z">
+      <class name="com.menghunli.cms.testcase.TestCase">
+        <test-method status="PASS" signature="getDriver(java.lang.String, java.lang.String)[pri:0, instance:com.menghunli.cms.testcase.TestCase@6acdbdf5]" name="getDriver" is-config="true" duration-ms="7900" started-at="2019-04-23T19:48:29Z" finished-at="2019-04-23T19:48:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://cms.testenv.menghunli.com/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="checkCmsLogin()[pri:0, instance:com.menghunli.cms.testcase.TestCase@6acdbdf5]" name="checkCmsLogin" duration-ms="3136" started-at="2019-04-23T19:48:37Z" description="CMS用户登录" finished-at="2019-04-23T19:48:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCmsLogin -->
+        <test-method status="PASS" signature="checkRzsqSearchCityPhone()[pri:0, instance:com.menghunli.cms.testcase.TestCase@6acdbdf5]" name="checkRzsqSearchCityPhone" duration-ms="13436" started-at="2019-04-23T19:48:40Z" description="审核管理-入驻申请-检查电话搜索条件" finished-at="2019-04-23T19:48:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRzsqSearchCityPhone -->
+        <test-method status="PASS" signature="checkRzsqSearchSeller()[pri:0, instance:com.menghunli.cms.testcase.TestCase@6acdbdf5]" name="checkRzsqSearchSeller" duration-ms="7150" started-at="2019-04-23T19:48:53Z" description="审核管理-入驻申请-商家类型搜索条件" finished-at="2019-04-23T19:49:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRzsqSearchSeller -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.menghunli.cms.testcase.TestCase@6acdbdf5]" name="closeBrowser" is-config="true" duration-ms="966" started-at="2019-04-23T19:49:00Z" finished-at="2019-04-23T19:49:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.menghunli.cms.testcase.TestCase -->
+    </test> <!-- CMS后台-谷歌浏览器 -->
+  </suite> <!-- CMS后台 -->
+  <suite name="梦婚礼" duration-ms="0" started-at="2019-04-23T11:49:02Z" finished-at="2019-04-23T11:49:02Z">
+    <groups>
+    </groups>
+  </suite> <!-- 梦婚礼 -->
+</testng-results>
